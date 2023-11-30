@@ -160,28 +160,28 @@ To clone and run this application, ensure that you have installed at least Java 
 
 ### Usage
 **add products**
-![Get all products](./Demo/add-product.png)
+![Get all products](./springcommere/Demo/add-product.png)
 
 **delete products**
-![delete products](./Demo/delete-product.png)
+![delete products](./springcommere/Demo/delete-product.png)
 
 **edit products**
-![edit products](./Demo/edit-product.png)
+![edit products](./springcommere/Demo/edit-product.png)
 
 **filter products**
-![filter products](./Demo/filter-product.png)
+![filter products](./springcommere/Demo/filter-product.png)
 
 **login**
-![login](./Demo/login.png)
+![login](./springcommere/Demo/login.png)
 
 **payment**
-![payment](./Demo/payment.png)
+![payment](./springcommere/Demo/payment.png)
 
 **products detail**
-![product detail](./Demo/product-detail.png)
+![product detail](.//springcommereDemo/product-detail.png)
 
 **search product**
-![login](./Demo/search-product.png)
+![login](./springcommere/Demo/search-product.png)
 
 **show cart**
-![login](./Demo/show-cart.png)
+![login](./springcommere/Demo/show-cart.png)
