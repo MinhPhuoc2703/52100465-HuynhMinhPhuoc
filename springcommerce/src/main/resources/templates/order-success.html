@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Order Success</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container mt-5">
+  <div class="card text-center" >
+    <div class="card-header">
+      <h2    style="color: #06ff26">Order Successfully! </h2>
+    </div>
+
+
+    <div class="card-body" >
+      <p class="card-text">Thank you for your order. Your items will be shipped to the provided address.</p>
+      <h5 class="card-title">Order Details</h5>
+      <table class="table table-bordered w-50 mx-auto mt-1" >
+        <tr>
+          <td>Full Name:</td>
+          <td th:text="${fullName}"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td th:text="${email}"></td>
+        </tr>
+        <tr>
+          <td>Phone Number:</td>
+          <td th:text="${phonenumber}"></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td th:text="${address}"></td>
+        </tr>
+        <tr>
+          <td>Total Amount:</td>
+          <td th:text="${#strings.replace(#numbers.formatCurrency(amount*0.01), '$', '') + 'VNĐ'}"></td>
+        </tr>
+      </table>
+      <p class="card-text">Your order has been successfully placed. You will receive an email confirmation shortly.</p>
+      <a href="/" class="btn btn-primary">Continue Shopping</a>
+    </div>
+    <div class="card-footer text-muted">
+      Moonlight Cocktail - Enjoy your drinks!
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
