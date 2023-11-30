@@ -1,3 +1,4 @@
+# Demo video is in a zip file submitted on elearning
 # Spring Commerce
 
 A simple sales website built on the Spring Boot platform. This website provides basic functions such as product management, search, registration, login, add to cart, payment and other features.
